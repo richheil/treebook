@@ -1,6 +1,10 @@
 class ApplicationController < ActionController::Base
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.
+  
+  add_flash_types :error
+  add_flash_types :notice
+  add_flash_types :alert
   include ActiveModel::ForbiddenAttributesProtection
   protect_from_forgery with: :exception
   before_filter :configure_devise_params_sign_up, if: :devise_controller?
