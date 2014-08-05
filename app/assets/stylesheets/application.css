@@ -24,3 +24,15 @@ body{
 .span4{
 	margin-top: 10px;
 }
+
+html, body {
+
+
+background-image: url('bg.png');
+background-repeat: repeat;
+
+
+}
+.h1 {
+	color: white;
+}

@@ -1,10 +1,14 @@
-<div class="page-header">
+<div class="page-header" style="color: white;">
   <h1>All of the Statuses</h1>
 </div>
+<div id="Post Button" style="padding-bottom: 15px;">
 <%= link_to "Post a New Status", new_status_path, class: "btn btn-info" %>
+</div>
 <% @statuses.each do |status| %>
+<div class="well">
 <div class="status">
   <div class="row">
+    
   <div class="span1">
     <%= image_tag status.user.gravatar_url %>
   </div>
@@ -20,6 +24,7 @@
     </span>
   </div>
   </div>
+</div>
 </div>
 </div>
 <% end %>
